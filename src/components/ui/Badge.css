@@ -1,0 +1,31 @@
+.badge {
+    display: inline-flex;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1;
+    align-items: center;
+}
+
+.badge-default {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.badge-secondary {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--color-text-main);
+}
+
+.badge-outline {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: var(--color-text-main);
+}
+
+.badge-accent {
+    background-color: #ff2d55;
+    color: white;
+}

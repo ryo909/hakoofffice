@@ -1,0 +1,35 @@
+.avatar-node {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.avatar-node:hover {
+    transform: translate(-50%, -60%) scale(1.1);
+    z-index: 20;
+}
+
+.avatar-node-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-node-label {
+    margin-top: 4px;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(4px);
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.avatar-node-highlight .avatar-node-content {
+    filter: drop-shadow(0 0 8px gold);
+}

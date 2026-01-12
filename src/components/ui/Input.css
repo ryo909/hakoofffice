@@ -1,0 +1,38 @@
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.input-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text-sub);
+}
+
+.input-field {
+    height: 40px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 12px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.input-field:focus {
+    border-color: var(--color-primary);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.1);
+}
+
+.input-field.input-error {
+    border-color: var(--status-focus);
+}
+
+.input-error-msg {
+    font-size: 12px;
+    color: var(--status-focus);
+}

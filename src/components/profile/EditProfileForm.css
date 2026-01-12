@@ -1,0 +1,68 @@
+.edit-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.edit-form-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.status-radio-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.status-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.status-radio-label.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+.hidden-radio {
+    display: none;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 32px;
+}

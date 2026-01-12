@@ -1,0 +1,128 @@
+.profile-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.profile-header-info {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+}
+
+.profile-status-line {
+    font-size: 14px;
+    color: var(--color-text-sub);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.status-dot-inline {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-sub);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.conversation-starter-box {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
+    border: 1px solid white;
+}
+
+.starter-item {
+    margin-bottom: 12px;
+}
+
+.starter-item:last-child {
+    margin-bottom: 0;
+}
+
+.starter-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+}
+
+.starter-text {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.tags-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-badge {
+    font-size: 12px;
+}
+
+.like-badge {
+    background-color: #fff0f5;
+    /* Light pinkish for likes */
+    color: #d12e6c;
+}
+
+.topic-badge {
+    border-color: #d1d1d6;
+    color: #666;
+}
+
+.profile-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.width-full {
+    width: 100%;
+}

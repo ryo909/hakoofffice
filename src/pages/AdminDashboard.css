@@ -1,0 +1,65 @@
+.admin-container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.admin-form-card {
+    margin-bottom: 32px;
+    padding: 24px;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.admin-table-container {
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.admin-table th {
+    background-color: #fafafa;
+    font-weight: 600;
+    color: var(--color-text-sub);
+}
+
+.pos-inputs {
+    display: flex;
+    gap: 8px;
+}
+
+.tiny-input {
+    width: 60px;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
